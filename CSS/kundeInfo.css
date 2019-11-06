@@ -1,0 +1,32 @@
+* {
+    position: relative;
+}
+
+body {
+    height: 95vh;
+    width: 95vw;
+    background-color: #ffffff;
+}
+
+#listContainer {
+    position: absolute;
+    height: 50%;
+    width: 35%;
+    top: 15%;
+    left: 5%;
+    background-color: #c5c5c5;
+}
+
+#infoContainer {
+    position: absolute;
+    height: 50%;
+    width: 35%;
+    top: 15%;
+    right: 5%;
+    background-color: #c5c5c5;
+}
+
+#customerSearch {
+    top: 1vh;
+    left: 10vw;
+}

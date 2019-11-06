@@ -1,19 +1,14 @@
-html{
-    height: 100%;
-}
-
 * {
     position: relative;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    min-height: 100vh;
+body {
+    height: 95vh;
+    width: 95vw;
     background-color: #ffffff;
 }
 
-#loginHolder{
+#loginHolder {
     width: 30vw;
     height: 25vh;
     top: 35%;
@@ -22,7 +17,7 @@ body{
     max-height: 175px;
 }
 
-#textHolder{
+#textHolder {
     left: 25%;
     top: 10%;
 }

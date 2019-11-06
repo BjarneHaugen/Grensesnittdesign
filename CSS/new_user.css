@@ -2,13 +2,13 @@
     position: relative;
 }
 
-body{
+body {
     height: 95vh;
     width: 95vw;
     background-color: #ffffff;
 }
 
-#loginHolder{
+#loginHolder {
     width: 30%;
     height: 65%;
     top: 25%;
@@ -17,7 +17,7 @@ body{
     max-height: 400px;
 }
 
-#textHolder{
+#textHolder {
     left: 20%;
     top: 5%;
 }
