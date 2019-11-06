@@ -1,0 +1,28 @@
+* {
+    position: relative;
+}
+
+body{
+    height: 95vh;
+    width: 95vw;
+    background-color: #ffffff;
+}
+
+#loginHolder{
+    width: 30%;
+    height: 65%;
+    top: 25%;
+    left: 35%;
+    background-color: #c5c5c5;
+    max-height: 400px;
+}
+
+#textHolder{
+    left: 20%;
+    top: 5%;
+}
+
+#textHolder * {
+    display: grid;
+    margin: 1%;
+}
