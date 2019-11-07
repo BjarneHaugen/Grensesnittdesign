@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <title>kunde info</title>
     <link rel="stylesheet" type="text/css" href="../CSS/kundeInfo.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
     <div id="listContainer" class="container">
         <input type="text" name="kunder" id="customerSearch">
-        <div>
+
+        <div id="app">
             <ul>
-                <li>kunde 1</li>
-                <li>kunde 2</li>
-                <li>kunde 3</li>
-                <li>kunde 4</li>
-                <li>kunde 5</li>
-                <li>kunde 6</li>
+                <li v-for="kunde in kunder">
+                    {{ kunde.kunde }}
+                </li>
             </ul>
         </div>
     </div>
     <div id="infoContainer" class="container">
         <div></div>
     </div>
+    <script src="../JS/kundeInfo.js"></script>
 </body>
 
 </html>
