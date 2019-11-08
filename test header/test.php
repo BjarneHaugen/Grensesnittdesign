@@ -2,13 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <title>test page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.min.css">
-    <link rel="import" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/package.json">
-    <link rel="import" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/README.md">
     <link rel="stylesheet" type="text/css" href="css/test.css">
     
 </head>
 <body>
+    <?php require 'header.html' ?>
     <div class="container" id="testcontainer">
         <div class="row">
             <div class="col" id="testcol">col1</div>
