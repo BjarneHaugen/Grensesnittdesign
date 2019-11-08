@@ -3,30 +3,21 @@
 }
 
 body {
-    height: 95vh;
-    width: 95vw;
+    height: 100vh;
     background-color: #ffffff;
 }
 
+.container{
+    height: 100vh;
+}
+
 #listContainer {
-    position: absolute;
-    height: 50%;
-    width: 35%;
-    top: 15%;
-    left: 5%;
+    height: 50vh;
     background-color: #c5c5c5;
 }
 
 #infoContainer {
-    position: absolute;
-    height: 50%;
-    width: 35%;
-    top: 15%;
-    right: 5%;
+    height: 50vh;
     background-color: #c5c5c5;
 }
 
-#customerSearch {
-    top: 1vh;
-    left: 10vw;
-}
