@@ -22,18 +22,22 @@
             <div id="app" class="">
                 <ul>
                     <li v-for="kunde in kunder">
-                        {{ kunde.kunde }}
+                        {{ kunde.fornavn }} {{ kunde.etternavn }}. kunde nummer:{{ kunde.nr }}
                     </li>
                 </ul>
             </div>
         </div>
         <div id="infoContainer" class="col-4 align-self-center">
-            <div id="app2">
-                <ul>
-                    <li v-for="kunde in kunder">
-                        {{ kunde.kunde }}
-                    </li>
-                </ul>
+            <div id="app">
+                <div>
+                    <p>
+                        {{ kunder[1].fornavn }} <br>
+                        {{ kunder[1].etternavn }}. <br>
+                        kunde nummer:{{ kunder[1].nr }} <br>
+                        {{ kunder[1].epost }} <br>
+                        {{ kunder[1].mobil }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
