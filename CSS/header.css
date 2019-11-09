@@ -1,86 +1,22 @@
+
+#headerRow{
+    background-color: darkgray;
+    text-align: center;
+}
+#om-oss, #mainpage, #tilbakemelding, #min-side, #timebestilling{
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border: solid;
+    border-width: .1em;
+    border-color: black;
+}
 h1 {
-    font-size: 12;
-    position: absolute;
+    font-size: 1em;
     margin: auto;
     top: 12px;
     left: 0;
     bottom: 0;
     right: 0;
 }
-.Header-header{
-    background-color: darkgray;
-    position: -webkit-sticky; /* safari */
-    position: sticky;
-    width: 100%;
-    margin: auto;
-    padding:0px;
-    font-size: 0;
-    height: 57px;
-    top: 0px;
-    align-content: top;
-    padding: 0px;
-}
-.Main-container{
-    position: -webkit-sticky; /* safari */
-    position: sticky;
-    width: 100%;
-    margin: auto;
-    padding:0px;
-    font-size: 0;
-    height: 50px;
-    top: 0px;
-    align-content: top;
-    padding: 0px;
-    background-color: lightgray;
-}
-.headerfield{
-    font-size: 12px;
-    width: 20%;
-    height: 50px;
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    
-}
-body{
-    margin: 0;
-}
-.outer-container{
-    width: 100%;
-    max-width: 1920px;
-    margin: auto;
-    overflow: visible;
-}
-.Right-shadow{
-    width: 7px;
-    height: 50px;
-    position: absolute;
-    z-index: 2;
-    margin-right: 0;
-    right:0;
-    top: 0;
-    background-color: darkgray;
-    
-}
-.Left-shadow{
-    width: 7px;
-    height: 50px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 0;
-    left:0;
-    top: 0;
-    z-index: 3;
-    background-color: whitesmoke;
-}
-.Top-shadow{
-    width: 100%;
-    height: 7px;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    background-color: whitesmoke;
-    
-}
+
+
+
