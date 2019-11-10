@@ -20,20 +20,32 @@
 </head>
 
 <body>
-        <div id="header"></div>
-    <div id="listContainer" class="container">
-        <input type="text" name="kunder" id="customerSearch">
-
-        <div id="app">
-            <ul>
-                <li v-for="kunde in kunder">
-                    {{ kunde.kunde }}
-                </li>
-            </ul>
+    <div class="container d-flex justify-content-around align-items-center">
+        <div id="listContainer" class="col-4 align-self-center  ">
+            <form>
+                <input type="text" name="kunder" id="customerSearch" class="col-6 d-flex offset-3">
+            </form>
+            <div id="app" class="">
+                <ul>
+                    <li v-for="kunde in kunder">
+                        {{ kunde.fornavn }} {{ kunde.etternavn }}. kunde nummer:{{ kunde.nr }}
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div id="infoContainer" class="container">
-        <div></div>
+        <div id="infoContainer" class="col-4 align-self-center">
+            <div id="app">
+                <div>
+                    <p>
+                        {{ kunder[1].fornavn }} <br>
+                        {{ kunder[1].etternavn }}. <br>
+                        kunde nummer:{{ kunder[1].nr }} <br>
+                        {{ kunder[1].epost }} <br>
+                        {{ kunder[1].mobil }}
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="../JS/kundeInfo.js"></script>
 </body>
