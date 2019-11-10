@@ -5,7 +5,8 @@ var kunder = [
     etternavn: "Olsen",
     epost: "epost@epost.com",
     img: "bilde.JPG",
-    mobil: 12345678
+    mobil: 12345678,
+    comment: ["kult"]
   },
   {
     nr: 2,
@@ -13,7 +14,8 @@ var kunder = [
     etternavn: "Hansen",
     epost: "epost@epost.no",
     img: "bilde.JPG",
-    mobil: 23456789
+    mobil: 23456789,
+    comment: ["er"]
   },
   {
     nr: 3,
@@ -21,12 +23,12 @@ var kunder = [
     etternavn: "Nordmark",
     epost: "epost@epost.org",
     img: "bilde.JPG",
-    mobil: 34567890
+    mobil: 34567890,
+    comment: ["as"]
   }
 ];
 
 var selected = "";
-
 
 var app = new Vue({
   el: '#app',

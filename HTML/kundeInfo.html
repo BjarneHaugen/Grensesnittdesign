@@ -22,10 +22,17 @@
                         {{ kunde.fornavn }} {{ kunde.etternavn }}
                     </option>
                 </select>
-                <span > <br> Navn : {{ selected.fornavn }} {{ selected.etternavn}}
-                        <br> epost : {{ selected.epost }}
-                        <br> mobil : {{ selected.mobil }}
+                <span> <br> Navn : {{ selected.fornavn }} {{ selected.etternavn}}
+                    <br> epost : {{ selected.epost }}
+                    <br> mobil : {{ selected.mobil }}
                 </span>
+                <br><br>
+                <span>spesifikk info om kunden:</span>
+                <ul>
+                    <li v-for="value in selected.comment"> {{ value }} </li>
+                </ul>
+                <br>
+                <!-- <textarea v-model="message" placeholder="om kunden"></textarea> -->
             </div>
         </div>
     </div>
