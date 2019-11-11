@@ -1,0 +1,40 @@
+
+body {
+    height: 100vh;
+    background-color: black                             
+} /* body end - pretty irrelevant */
+
+.container{
+    height: 100vh;
+    background-color: red
+} /* container itself - the background color on the actual phone */
+
+#listContainer { 
+    height: 75vh;
+    background-color: wheat;
+} /* the actual container in the middle that matters */
+
+
+
+input[type=text] {
+    width: 50vh;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid green;
+  }
+  /* the whole input type text */
+
+select {
+    width: 50vh;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    border-bottom: 2px solid green;
+  }
+  /* select button */
+
+  

@@ -1,0 +1,92 @@
+* {
+    margin: 0vh;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main-container {
+    width: 100%;
+    
+} /* main container */
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+} /* sub container */
+
+.Types-heading {
+    padding: 10px 0;
+    padding-top: 50px;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+} /* studentklinkken on top */
+
+
+.border1 {
+    border-bottom: 2px solid grey;
+    width: 300px;
+    margin:10px auto;
+ 
+}
+/* border 1 the first line */
+
+.border2 {
+    border-bottom: 2px solid grey;
+    width: 800px;
+    margin:10px auto;
+    
+}
+/* border 2 the second line */
+
+.Types-container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Type-box {
+    max-width: 20%;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.type-name {
+    color: #0172ea;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.type-desc {
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 25px;
+    color: #141010;
+} 
+/* Lorem text */
+
+@media only screen and (max-width: 980px) {
+    .Types-box {
+        max-width: 45%;
+    }
+    .border2 {
+        width: 600px;
+    }
+    }
+
+    @media only screen and (max-width: 660px) {
+        .Service-box {
+            max-width: 100%;
+        }
+        .border2 {
+            width: 400px;
+        }
+        }
+    
+        /* double media if the width of the browser changes it will behave as responsive page */
