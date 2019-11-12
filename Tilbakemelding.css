@@ -1,12 +1,12 @@
 
 body {
     height: 100vh;
-    background-color: black                             
+    background-color: black;                             
 } /* body end - pretty irrelevant */
 
 .container{
     height: 100vh;
-    background-color: red
+    background-color: red;
 } /* container itself - the background color on the actual phone */
 
 #listContainer { 
@@ -36,5 +36,3 @@ select {
     border-bottom: 2px solid green;
   }
   /* select button */
-
-  
