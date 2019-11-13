@@ -1,13 +1,14 @@
 
 #headerRow{
-    background-color: darkgray;
+    background-color: #dedede;
     text-align: center;
 }
 #om-oss, #mainpage, #tilbakemelding, #min-side, #timebestilling{
     padding: 0.3em 0.3em 0.3em 0.3em;
     border: solid;
     border-width: .1em;
-    border-color: black;
+    border-color: #858585;
+    border-bottom: .1em solid #4880b8;
 }
 h1 {
     font-size: 1em;

@@ -1,0 +1,10 @@
+.col{
+    text-align: center;
+}
+.testbox{
+    height: 50px;
+    background-color: #dedede;
+    padding: 2px;
+    border: solid;
+    border-color: #858585;
+}
