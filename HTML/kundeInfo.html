@@ -21,29 +21,24 @@
 
 <body>
     <div class="container d-flex justify-content-around align-items-center">
-        <div id="listContainer" class="col-4 align-self-center  ">
-            <form>
-                <input type="text" name="kunder" id="customerSearch" class="col-6 d-flex offset-3">
-            </form>
-            <div id="app" class="">
+        <div id="listContainer" class="col-8 align-self-center  ">
+            <div id="app" class="col-6">
+                <select v-model="selected">
+                    <option v-for="kunde in kunder" v-bind:value="kunde">
+                        {{ kunde.fornavn }} {{ kunde.etternavn }}
+                    </option>
+                </select>
+                <span> <br> Navn : {{ selected.fornavn }} {{ selected.etternavn}}
+                    <br> epost : {{ selected.epost }}
+                    <br> mobil : {{ selected.mobil }}
+                </span>
+                <br><br>
+                <span>spesifikk info om kunden:</span>
                 <ul>
-                    <li v-for="kunde in kunder">
-                        {{ kunde.fornavn }} {{ kunde.etternavn }}. kunde nummer:{{ kunde.nr }}
-                    </li>
+                    <li v-for="value in selected.comment"> {{ value }} </li>
                 </ul>
-            </div>
-        </div>
-        <div id="infoContainer" class="col-4 align-self-center">
-            <div id="app">
-                <div>
-                    <p>
-                        {{ kunder[1].fornavn }} <br>
-                        {{ kunder[1].etternavn }}. <br>
-                        kunde nummer:{{ kunder[1].nr }} <br>
-                        {{ kunder[1].epost }} <br>
-                        {{ kunder[1].mobil }}
-                    </p>
-                </div>
+                <br>
+                <!-- <textarea v-model="message" placeholder="om kunden"></textarea> -->
             </div>
         </div>
     </div>
