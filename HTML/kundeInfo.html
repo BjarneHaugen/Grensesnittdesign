@@ -7,16 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../CSS/kundeInfo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script src="https://l.facebook.com/l.php?u=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ftwitter-bootstrap%2F4.3.1%2Fcss%2Fbootstrap-grid.css%3Ffbclid%3DIwAR2BTEJ9l-tRHljd8bdrUrUZqi62zp_-UWXZZ5mKYRqX8t4W6hCUTjObPWs&h=AT2PiDkZgc0d2bzhMV9DJvqhM3jFtiwQ8Nfu-eDkbrHyIiQkzMJCPWReTQ-xvxc1LahCQY48qYF8QlKjxZM2KTO2iexmos1WIackAzp4UPwJNPSh1SHfa3QLTE2LPoJSX7Q"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        
-       <script src="../script/import2.js"></script>
-       <link rel="stylesheet" type="text/css" href="../CSS/standard.css">
 </head>
 
 <body>
@@ -34,11 +26,18 @@
                 </span>
                 <br><br>
                 <span>spesifikk info om kunden:</span>
-                <ul>
-                    <li v-for="value in selected.comment"> {{ value }} </li>
-                </ul>
                 <br>
-                <!-- <textarea v-model="message" placeholder="om kunden"></textarea> -->
+                <div id="customerComment">
+                    <form v-on:submit.prevent="addComment">
+                        <label for="nyCommet"></label>
+                        <input v-model="newComment" id="nyCommet" placeholder="ny kommentar">
+                        <button>Add</button>
+                    </form>
+                    <ul>
+                        <li v-for="(kunde.comment, kunde.comment.index) in selected" v-bind:key="kunde.comment.id"
+                            v-bind:title="kunde.comment.title" v-on:remove="selected.comment.splice(index, 1)"></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
