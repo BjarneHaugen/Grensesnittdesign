@@ -8,5 +8,8 @@ body {
 }
 
 #loginHolder {
+
+    padding-top: 5vh;
     background-color: #c5c5c5;
 }
+
