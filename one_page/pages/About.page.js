@@ -1,6 +1,5 @@
 const AboutPage = {
     template: `
-    <div id="header"></div>
     <div class="main-container">
   
          <!-- main container END -->
@@ -67,6 +66,7 @@ const AboutPage = {
           </div>
           <div class="type-desc"> 
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id facilisis quam, a pulvinar massa. Phasellus ullamcorper nibh sit amet eros dictum pretium.. </p>
+          </div>
           </div>
 `
 };

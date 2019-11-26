@@ -1,6 +1,6 @@
 const ContactPage = {
     template: `
-                <div>
+                <div class="test">
                     <h1>Kontakt oss</h1>
                     <form>
                         <input v-model="contactForm.name" placeholder="Navn" type="text" /><br>
