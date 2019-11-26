@@ -31,11 +31,11 @@
                     <form v-on:submit.prevent="addComment">
                         <label for="nyCommet"></label>
                         <input v-model="newComment" id="nyCommet" placeholder="ny kommentar">
-                        <button>Add</button>
+                        <button @click="addComment">Add</button>
                     </form>
                     <ul>
                         <li v-for="(kunde.comment, kunde.comment.index) in selected" v-bind:key="kunde.comment.id"
-                            v-bind:title="kunde.comment.title" v-on:remove="selected.comment.splice(index, 1)"></li>
+                            v-bind:nyCommet="kunde.comment.nyCommet" v-on:remove="selected.comment.splice(index, 1)"></li>
                     </ul>
                 </div>
             </div>
