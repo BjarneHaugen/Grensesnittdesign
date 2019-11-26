@@ -69,6 +69,10 @@
     line-height: 25px;
     color: #141010;
 } 
+
+.col * h2, h1, p{
+    text-align: center;
+}
 /* Lorem text */
 
 @media only screen and (max-width: 980px) {
