@@ -14,8 +14,12 @@
 .fill * {
     background-color: #858585;
     color: #fff;
-    font-weight: bold;
-    
+    font-weight: bold; 
+}
+.fill2{
+    background-color: #858585;
+    color: #fff;
+    font-weight: bold; 
 }
 .row *.col-7, .col-2,.col-3{
     border: solid #4880b8 2px;
