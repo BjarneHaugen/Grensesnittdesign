@@ -2,33 +2,43 @@ const My_page = {
     template: `
             <div>
                 <toolbar></toolbar>
-                    <div>
-                       din time hos {{apointments.type}}
+
+                    <div v-for="(index, kunde) in appointments">
+                      <div class="col-5"> din time hos {{kunde.type}} </div>
+                      <div class="col-4"> dato {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
+                      <div class="col-3"> behandlere {{kunde.worker}} </div>
+                      <button @click="deleteEvent(index)">delete</button>
                     </div>
-                    <div>
-                        dato {{apointments.date}} {{apointments.month}} kl {{apointments.time}} 
-                    </div>
-                    <div>
-                    behandlere {{apointments.worker}}
-                    </div>
+                   
+
             </div>
             `,
     methods: {
-        removeDate() {
-            ;
-        }
+        deleteEvent: function(index) {
+            this.events.splice(index, 1);
+          }
     },
     data() {
         return {
-            apointments:
-            {
-                type: "akupunktur",
-                month: "mai",
-                date: 10,
-                time: 12.15,
-                worker: "lasse"
-            }
-
+            appointments:
+                [
+                    {
+                        index: 0,
+                        type: "akupunktur",
+                        month: "mai",
+                        date: 10,
+                        time: 12.15,
+                        worker: "lasse"
+                    },
+                    {
+                        index: 1,
+                        type: "osteopati",
+                        month: "juni",
+                        date: 9,
+                        time: 14.15,
+                        worker: "marie"
+                    }
+                ]
         }
     }
 };
