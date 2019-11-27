@@ -1,8 +1,4 @@
 
-body {
-    height: 100vh;
-    background-color: black;                             
-} /* body end - pretty irrelevant */
 
 .container{
     background-color: #858585;
@@ -42,6 +38,7 @@ select {
   }
   #tilbakemelding-boks{
       width:100%;
-      height: 20vh;
+      padding: 0;
+      margin: auto;
       line-break: auto;
   }
