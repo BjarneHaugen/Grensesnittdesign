@@ -1,5 +1,7 @@
 const ContactPage = {
     template: `
+        <div>
+            <toolbar></toolbar>
                 <div class="test">
                     <h1>Kontakt oss</h1>
                     <form>
@@ -8,7 +10,9 @@ const ContactPage = {
                         <textarea v-model="contactForm.message" placeholder="Din melding" /><br>
                         <button type="button" @click="sendMail">Send mail!</button>
                     </form>
-                </div>`,
+                </div>
+            </div>
+                `,
     methods: {
         sendMail() {
             alert(`Melding sent fra ${this.contactForm.name} (${this.contactForm.email}): "${this.contactForm.message}"`);

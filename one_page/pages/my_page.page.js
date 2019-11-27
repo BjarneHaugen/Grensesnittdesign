@@ -1,13 +1,13 @@
-const Timebestilling = {
+const My_page = {
     template: `
             <div>
                 <toolbar></toolbar>
                     <div>
-                        test
+                        min side
                     </div>
             </div>
             `,
 
 };
 
-export default Timebestilling;
+export default My_page;

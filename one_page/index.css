@@ -1,0 +1,27 @@
+
+#headerRow {
+    background-color: #dedede;
+    text-align: center;
+}
+
+#om-oss, #mainpage, #tilbakemelding, #min-side, #timebestilling {
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border: solid;
+    border-width: .1em;
+    border-color: #858585;
+    border-bottom: .1em solid #4880b8;
+}
+
+#headerRow * text {
+    font-size: 1em;
+    color: 000000;
+
+}
+
+#headerRow a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: 000000;
+}
+
+
+
