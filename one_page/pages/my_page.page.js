@@ -11,11 +11,11 @@ const My_page = {
                     <div v-for="(kunde, index) in appointments" :key="kunde.index">
                     <div class="row" id="filler"></div>
                     <div class="row leftText">
-                    <div class="col-4 fill2"> din time hos: {{kunde.worker}} </div>
-                      <div class="col-3 fill2"> behandling:  {{kunde.type}} </div>
-                      <div class="col-4 fill2"> dato {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
+                    <div class="col-4 roundedBox"> din time hos: {{kunde.worker}} </div>
+                      <div class="col-3 roundedBox"> behandling:  {{kunde.type}} </div>
+                      <div class="col-4 roundedBox"> dato {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
                       
-                      <div class="col-1 fill2"><button @click="deleteEvent(index)">delete</button></div>
+                      <div class="col-1 roundedBox"><button @click="deleteEvent(index)">delete</button></div>
                     </div>
                    </div>
                 </div>
