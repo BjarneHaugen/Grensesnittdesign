@@ -52,6 +52,7 @@ const ContactPage = {
         <div id="filler"></div>
         </div>
         </div>
+        </div>
                 `,
     methods: {
         sendMail() {
