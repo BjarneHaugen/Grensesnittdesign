@@ -8,16 +8,31 @@ const Timebestilling = {
 
                     </div>
 
-                    {{myDate}}
+                    {{myDate}}  
 
                     
+                    <div>
+
+                        <div v-for="hour in timer.tid">
+                            {{hour}}
+                        </div>
+
+                    </div>
+
+
             </div>
             `,
 
 
     data() {
         return {
-            myDate: new Date().toISOString().slice(0, 10)
+            myDate: new Date().toISOString().slice(0, 10),
+
+            timer: [{
+                tid:9,
+                tid:10
+            
+            }]
         }
     }
 };

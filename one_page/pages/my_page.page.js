@@ -3,7 +3,7 @@ const My_page = {
             <div>
                 <toolbar></toolbar>
 
-                    <div v-for="(index, kunde) in appointments">
+                    <div v-for="(kunde, index) in appointments" :key="kunde.index">
                       <div class="col-5"> din time hos {{kunde.type}} </div>
                       <div class="col-4"> dato {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
                       <div class="col-3"> behandlere {{kunde.worker}} </div>
@@ -15,7 +15,7 @@ const My_page = {
             `,
     methods: {
         deleteEvent: function(index) {
-            this.events.splice(index, 1);
+            this.$delete(this.appointments, index);
           }
     },
     data() {
