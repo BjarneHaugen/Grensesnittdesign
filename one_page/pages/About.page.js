@@ -16,7 +16,7 @@ const AboutPage = {
             </div>
 
         </div>
-        <div class="row">
+        <div class="row midtText">
             <div class="col" id="about_page">
 
                 

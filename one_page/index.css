@@ -81,9 +81,6 @@ css for about page
     color: #141010;
 } 
 
-#about_page * h2, h1, p{
-    text-align: center;
-}
 /* Lorem text */
 
 
@@ -94,7 +91,7 @@ end of css for about page
 .leftText{
     text-align: left;
 }
-.midtText{
+.midtText *{
     text-align: center;
 }
 
