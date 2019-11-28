@@ -2,29 +2,48 @@ const Timebestilling = {
     template: `
             <div>
                 <toolbar></toolbar>
-                    <div>
+                <div class="container">
+                <div class="row" id="filler">
+                <div class="col-md-2"></div>
+                    <div class="col-md-4">
 
                         <input type='date' v-model='myDate'>
 
                     </div>
-                    <div>
+                    <div class="col-md-4">
                       {{myDate}}  
                     </div>
+                    <div class="col-md-2"></div>
+                    </div>
                     
-                    <div>
+                    
 
                         <div v-for="hour in tid" v-bind:value="hour">
-                            <div v-if="hour.bestilt===true"> bestilt </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                            <div v-if="hour.bestilt===true"> 
+                            <div class="row">
+                                <div class="col">bestilt </div> 
+                                </div>
+                            </div>
                             <div v-else> 
-                                <div>   
+                                <div class="row">   
+                                <div class="col-md-7">
                                     {{hour.time}} : {{hour.min}}  
+                                    </div>
+                                <div class="col">
                                     <button @click="bestilling()"> bestill </button>
+                                    </div>
                                 </div> 
                             </div>
+                            </div>
                         </div>
+                        </div>
+                        
+
+                    
 
                     </div>
-
 
             </div>
             `,

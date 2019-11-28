@@ -8,7 +8,7 @@ const ContactPage = {
             <div class="row">
                 <div id="filler"></div>
             <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="col-4"> Fornavn</div>
                 <input v-model="contactForm.name" type="text" placeholder="Skriv ditt fornavn her">
                 <div class="fornavn"> </div>

@@ -2,11 +2,11 @@ const Toolbar = Vue.component('Toolbar', {
     template: `
             <div class="row" id="headerRow">
 
-                <div class="col-5" id="mainpage">
+                <div class="col-sm-5" id="mainpage">
 
                     <router-link to="/"> 
 
-                        <div>
+                        <div class="hundredpercent">
                         
                         Student klinikken 
                         
@@ -16,11 +16,11 @@ const Toolbar = Vue.component('Toolbar', {
 
                 </div>
 
-                <div class="col-2" id="om-oss">
+                <div class="col-sm-2" id="om-oss">
 
                   <router-link to="/about" class="about"> 
 
-                    <div>
+                    <div class="hundredpercent">
                        
                     om oss 
                   
@@ -30,30 +30,30 @@ const Toolbar = Vue.component('Toolbar', {
 
                 </div>
 
-                <div class="col-2" id="timebestilling">
+                <div class="col-sm-2" id="timebestilling">
 
                     <router-link to="/timebestilling" class="TB">
-                    <div>
+                    <div class="hundredpercent">
                     bestilling time
                     </div>
                     </router-link>
 
                 </div>
 
-                <div class="col-2" id="tilbakemelding"> 
+                <div class="col-sm-2" id="tilbakemelding"> 
                 
                     <router-link to="/contact" class="TB"> 
-                    <div>
+                    <div class="hundredpercent">
                     tilbakemelding 
                     </div>
                     </router-link>
 
                 </div>
                
-                <div class="col-1" id="min-side">
+                <div class="col-sm-1" id="min-side">
 
                     <router-link to="/my_page" class="TB"> 
-                    <div>
+                    <div class="hundredpercent">
                     min side 
                     </div>
                     </router-link>
