@@ -14,7 +14,7 @@ const Timebestilling = {
                     <div>
 
                         <div v-for="hour in tid" v-bind:value="hour">
-                            <div v-show="hour.bestilt===true"> bestilt </div>
+                            <div v-if="hour.bestilt===true"> bestilt </div>
                             <div v-else> 
                                 <div>   
                                     {{hour.time}} : {{hour.min}}  
