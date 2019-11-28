@@ -171,12 +171,10 @@ button{
     width: 100%;
 }
 
-#thisbutton, #thatbutton{
-    border: solid #4880b8 2px;
+.linkButton{
     text-align: center;
-    background-color: #858585;
-    font-weight: bold;;
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1em;
     color: #fff;
 }
 
