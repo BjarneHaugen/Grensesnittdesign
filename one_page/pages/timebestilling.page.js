@@ -7,14 +7,14 @@ const Timebestilling = {
                         <input type='date' v-model='myDate'>
 
                     </div>
-
-                    {{myDate}}  
-
+                    <div>
+                      {{myDate}}  
+                    </div>
                     
                     <div>
 
-                        <div v-for="hour in timer.tid">
-                            {{hour}}
+                        <div v-for="hour in tid" v-bind:value="hour">
+                            {{hour.time}} : {{hour.min}}
                         </div>
 
                     </div>
@@ -28,11 +28,28 @@ const Timebestilling = {
         return {
             myDate: new Date().toISOString().slice(0, 10),
 
-            timer: [{
-                tid:9,
-                tid:10
-            
-            }]
+            tid: [
+                {
+                    time: 9,
+                    min: "00"
+                },
+                {
+                    time: 9,
+                    min: 15
+                }, 
+                {
+                    time: 9,
+                    min: 30
+                },
+                {
+                    time: 9,
+                    min: 45
+                },
+                {
+                    time: 10,
+                    min: "00"
+                }
+            ]
         }
     }
 };
