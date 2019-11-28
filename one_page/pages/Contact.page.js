@@ -3,10 +3,10 @@ const ContactPage = {
         <div>
             <toolbar></toolbar>
                 
-            
-
             <div class="container">
-            <dic class="row">
+            
+            <div class="row">
+                <div id="filler"></div>
             <div class="col-4"></div>
             <div class="col-4">
                 <div class="col-4"> Fornavn</div>
@@ -21,13 +21,17 @@ const ContactPage = {
                 <input v-model="contactForm.email" type="text" placeholder="Skriv din e-post her">
                 <div class="epost"> </div>
 
-                <p>Ønsker du å være anonym?</p>
+                <div class="row">
+                <div class="col-8">
+                <p class="midtText">Ønsker du å være anonym?</p>
+                </div>
+                <div class="col-4">
                 <select id="anonym" name="anonym">
-                    <option value="Empty"></option>
+                <option value="Nei">Nei</option>
                     <option value="Ja">Ja</option>
-                    <option value="Ja">Nei</option>
                 </select>
-                <div closed></div>
+                </div>
+                </div>
 
                 <div class="col"> Tilbakemelding  
                     
