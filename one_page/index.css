@@ -1,39 +1,55 @@
 
 
 body{
+    margin: 0;
     padding: 0;
+    background-color: #dedede;
 }
 
 #headerRow {
-    background-color: #dedede;
+    padding: 0;
+    background-color: #4880b8;
     text-align: center;
+    position: sticky;
+}
+#headerRow * {
+    align-content: center;
 }
 
 #om-oss, #mainpage, #tilbakemelding, #min-side, #timebestilling {
+    height: 4vh;
     padding: 0.3em 0.3em 0.3em 0.3em;
-    border: solid;
     border-width: .1em;
-    border-color: #858585;
-    border-bottom: .1em solid #4880b8;
+    color: #fff;
+    text-align: center;
+    
 }
 #om-oss:hover, #mainpage:hover, #tilbakemelding:hover, #min-side:hover, #timebestilling:hover{
-    background-color: #858585;
+    background-color: #37618c;
+    border-radius: 5px;
 }
 #om-oss:active, #mainpage:active, #tilbakemelding:active, #min-side:active, #timebestilling:active{
     background-color: #4880b8;
 }
 
 #headerRow * text {
+    height: 5vh;
     font-size: 1em;
     color: 000000;
 
 }
 
+
+
 #headerRow a:link, a:hover, a:visited {
     text-decoration: none;
-    color: 000000;
+    color: ffffff;
 }
 
+.hundredpercent{
+    height: 100%;
+    width: 100%;
+}
 /*------------------------------------------------------------------------
 css for about page
 -----------------------------------------------------------------------*/
