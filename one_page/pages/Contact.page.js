@@ -12,6 +12,7 @@ const ContactPage = {
                 <div class="col-4"> Fornavn</div>
                 <input v-model="contactForm.name" type="text" placeholder="Skriv ditt fornavn her">
                 <div class="fornavn"> </div>
+            
 
                 <div class="col"> Etternavn</div>
                 <input v-model="contactForm.etternavn"type="text" placeholder="Skriv ditt etternavn her">
@@ -33,6 +34,8 @@ const ContactPage = {
                 </div>
                 </div>
 
+                <div class="roundedBox">
+
                 <div class="col"> Tilbakemelding  
                     
                 <textarea v-model="contactForm.message" id="Tilbakemelding-boks" cols="40" rows="5"></textarea>
@@ -44,8 +47,10 @@ const ContactPage = {
                 <div class="col-4">
                     <button type="button" @click="sendMail">Send mail!</button>
                 </div>
+                
                 <div class="col-4"></div>
                 </div>
+             </div>
             </div>
             <div class="col-4"></div>
             
