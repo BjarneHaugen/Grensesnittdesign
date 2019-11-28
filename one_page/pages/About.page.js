@@ -8,11 +8,8 @@ const AboutPage = {
                 <div class="sub-container">
                     <div class="Types-heading">
                         <h1>Studentklinikken</h1>
-                        <div class="border1"></div>
-                        <div class="border2"></div>
-                        <div class="border3"></div>
-                        <div class="border4"></div>
-                        <div class="Types-container"></div>
+                        <div class="gray_border col-4"></div>
+                        <div class="gray_border col-10"></div>
                     </div>
                 </div>
 
@@ -20,7 +17,7 @@ const AboutPage = {
 
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" id="about_page">
 
                 
                 <div class="type-desc">
