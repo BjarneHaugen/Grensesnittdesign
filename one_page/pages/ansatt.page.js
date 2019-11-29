@@ -11,23 +11,34 @@ const ansattpage = {
                     <div v-for="(kunde, index) in appointments" :key="kunde.index">
                     <div class="row" id="filler"></div>
                     <div class="row leftText">
-                    <div class="col-4 fill2"> du har kunden : {{kunde.kunde.navn}} </div>
+                    <div class="col-3 offset-md-1 roundedBox"> {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
+                    <div class="col-3 roundedBox"> behandling:  {{kunde.type}} </div>
+                    <div class="col-4 roundedBox"> pasient: {{kunde.kunde.navn}} </div>
 
-                        <div class="col-4 fill2"> {{kunde.date}} {{kunde.month}} kl {{kunde.time}} </div>
-                        <div class="col-3 fill2"> behandling:  {{kunde.type}} </div>
+                    
                       
-                      </div>
+                    </div>
                     
                    </div>
+<br>
+                   <div class="row roundedBox">
+                        <div class="col-md-3" style="height: 5vh">
+                            mer info om kunde:
+                        </div>
+                        <div class="col-md-3">
+                        <select v-model="selected">
+                            <option v-for="kunde in appointments" v-bind:value="kunde">
+                                {{ kunde.kunde.navn }}
+                                </option> 
+                        </select> <br>
+                        </div>
+                        <div class="col-md-6">
+                            <span> <br>  {{ selected.kunde }} </span>
+                        </div>
+                   </div>
+                    
 
-                    <select v-model="selected">
-                      <option v-for="kunde in appointments" v-bind:value="kunde">
-                          {{ kunde.kunde.navn }}
-                      </option> 
-                    </select> <br>
-
-                    <span> <br> kunde : {{ selected.kunde }}
-                    </span>
+                    
 
                 </div>
             </div>
