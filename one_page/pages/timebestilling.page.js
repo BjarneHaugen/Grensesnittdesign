@@ -5,33 +5,35 @@ const Timebestilling = {
                 <div class="container">
                 <div class="row" id="filler">
                 <div class="col-md-2"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-2 offset-md-2 roundedBox">
 
                         <input type='date' v-model='myDate'>
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2 roundedBox">
                       {{myDate}}  
                     </div>
                     <div class="col-md-2"></div>
                     </div>
                     
                     
+                <div style="height: 3vh"></div>
 
                         <div v-for="hour in tid" v-bind:value="hour">
                         <div class="row">
                         <div class="col-md-12">
                             <div v-if="hour.bestilt===true"> 
                             <div class="row">
-                                <div class="col">bestilt </div> 
+                                <div class="col roundedBox">bestilt </div> 
                                 </div>
                             </div>
                             <div v-else> 
                                 <div class="row">   
-                                <div class="col-md-7">
+                                <div class="col-md-1 offset-md-4 roundedBox">
                                     {{hour.time}} : {{hour.min}}  
                                     </div>
-                                <div class="col">
+                                    <div class="col-md-2 roundedBox"></div>
+                                <div class="col-md-1 roundedBox">
                                     <button @click="bestilling()"> bestill </button>
                                     </div>
                                 </div> 

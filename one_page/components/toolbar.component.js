@@ -51,8 +51,7 @@ const Toolbar = Vue.component('Toolbar', {
                 </div>
                
                 <div class="col-sm-1" id="min-side">
-
-                    <router-link to="/my_page" class="TB"> 
+                <router-link to="/loginchoice" class="TB"> 
                     <div class="hundredpercent">
                     min side 
                     </div>

@@ -1,3 +1,4 @@
+html { overflow-y: scroll; }
 body{
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ body{
     height: 5vh;
     font-size: 1em;
     color: 000000;
-
+    font-weight: bold;
 }
 
 
@@ -76,7 +77,6 @@ css for about page
 
 .type-desc {
     text-align: justify;
-    font-weight: lighter;
     line-height: 25px;
     color: #141010;
 } 
@@ -111,7 +111,6 @@ end of css for about page
     text-align: center;
     font-weight: bold;
     font-size: 1em;
-    color: #fff;
 }
 
 select {
@@ -125,7 +124,7 @@ select {
   }
   /* select button */
   
-input[type=text] {
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 12px 0;

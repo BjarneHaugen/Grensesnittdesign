@@ -16,8 +16,12 @@ const HomePage = {
             </div>
             <div class="row">
                 <div class="col leftText">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id officia eaque, natus laborum rem facilis dolorum et hic soluta veritatis voluptates doloremque velit. Nisi, maxime necessitatibus corrupti quidem fuga voluptate.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit nisi adipisci, possimus optio animi voluptatem molestias. Officiis libero rem commodi magnam ipsa recusandae esse est natus incidunt. Unde, inventore!</p></div>
+                    <p>Vi behandler akutte og langvarige plager / ubehag, men kan også hjelpe til med forebyggende tiltak. Du kan forvente en individuell samtale, undersøkelse, behandling og råd rettet mot dine behov.
+
+                    Studentene har selv ansvar for konsultasjonene, men har alltid en erfaren veileder tilgjengelig.
+                    
+                    Du trenger ikke henvisning fra lege.</p>
+                    </div>
                 
             </div>
                 </div>
@@ -32,7 +36,16 @@ const HomePage = {
                     <div class="row"><div class="filler"></div></div>
 
                     <div class="row">
-                        <div class="col-md-6 roundedBox linkButton">log in</div>
+                    
+                        <div class="col-md-6 roundedBox linkButton">
+
+
+                        <router-link to="/loginchoice" class="loginchoice"> 
+                        <div class="hundredpercent" style="color: black">
+                            log in
+                        </div>
+                        </router-link>
+                        </div>
                         <div class="col-md-6 roundedBox linkButton">sign up</div>
                     </div>
 
