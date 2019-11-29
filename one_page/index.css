@@ -157,3 +157,8 @@ input[type=text], input[type=password] {
     border-right: solid #858585 2px;
     border-bottom: solid #858585 2px;
 }
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
