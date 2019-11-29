@@ -24,7 +24,7 @@ const Timebestilling = {
                         <div class="col-md-12">
                             <div v-if="hour.bestilt===true"> 
                             <div class="row">
-                                <div class="col roundedBox">bestilt </div> 
+                                <div class="col-md-4 offset-md-4 roundedBox">bestilt </div> 
                                 </div>
                             </div>
                             <div v-else> 
@@ -74,7 +74,7 @@ const Timebestilling = {
                 {
                     time: 8,
                     min: "00",
-                    bestilt: false
+                    bestilt: true
                 },
                 {
                     time: 8,

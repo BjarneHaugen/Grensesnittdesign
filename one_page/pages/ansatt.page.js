@@ -21,19 +21,20 @@ const ansattpage = {
                     
                    </div>
 <br>
-                   <div class="row roundedBox">
-                        <div class="col-md-3" style="height: 5vh">
+                   <div class="row">
+                        <div class="col-md-3 roundedBox" style="height: 5vh">
                             mer info om kunde:
                         </div>
                         <div class="col-md-3">
+                        
                         <select v-model="selected">
                             <option v-for="kunde in appointments" v-bind:value="kunde">
                                 {{ kunde.kunde.navn }}
                                 </option> 
-                        </select> <br>
+                        </select> 
                         </div>
-                        <div class="col-md-6">
-                            <span> <br>  {{ selected.kunde }} </span>
+                        <div class="col-md-6 roundedBox">
+                            <span>  {{ selected.kunde }} </span>
                         </div>
                    </div>
                     
