@@ -3,7 +3,9 @@ const Timebestilling = {
             <div>
                 <toolbar></toolbar>
                 <div class="container">
+
                 <div class="row" id="filler">
+
                 <div class="col-md-2"></div>
                     <div class="col-md-2 offset-md-2 roundedBox">
 
@@ -17,6 +19,15 @@ const Timebestilling = {
                     </div>
                     
                     
+                    
+                <div style="height: 3vh"></div>
+
+                
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4 roundedBox">timer er 3 kvarter lange, du kan kun bestille der det er plass til 3 kvarter</div>
+                    </div>
+                    
+
                 <div style="height: 3vh"></div>
 
                         <div v-for="(hour, index) in tid" v-bind:value="hour" v-bind:key="tid.index">
@@ -50,8 +61,18 @@ const Timebestilling = {
             </div>
             `,
     methods: {
+        //bestilling av time krever minst 3 ledige plasser tillater ikke å bestille timer om det ikke er plass
         bestilling: function (index) {
-            this.tid[index].bestilt = true;
+            if(this.tid[index+1].bestilt != true && this.tid[index+2].bestilt != true){
+                    let tre = index + 3;
+                    for(let i = index; i < tre; i++){
+                        this.tid[i].bestilt = true;
+                    
+                }
+
+            }
+            
+            
         }
     },
 
