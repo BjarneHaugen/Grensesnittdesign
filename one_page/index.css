@@ -45,10 +45,6 @@ body{
     color: ffffff;
 }
 
-.removeblue a:link, a:.hover, a:visited{
-    text-decoration: none;
-    color: ffffff;
-}
 
 .hundredpercent{
     height: 100%;

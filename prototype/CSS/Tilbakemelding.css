@@ -1,0 +1,44 @@
+
+
+.container{
+    background-color: #dedede;
+} /* container itself - the background color on the actual phone */
+
+#listContainer { 
+    height: 75vh;
+    background-color: wheat;
+} /* the actual container in the middle that matters */
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4880b8;
+  }
+  /* the whole input type text */
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    border-bottom: 2px solid #4880b8;
+  }
+  /* select button */
+
+  #filler{
+      height: 10vh;
+      width: 100%;
+  }
+  #tilbakemelding-boks{
+      width:100%;
+      padding: 0;
+      margin: auto;
+      line-break: auto;
+  }

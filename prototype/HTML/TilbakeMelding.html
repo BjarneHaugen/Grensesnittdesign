@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+    
+        <script src="../script/import2.js"></script>
+    <title>Tilbakemeldinger</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Tilbakemelding.css">
+</head>
+
+<body>
+    
+<div id="header"></div>
+    <div class="container">
+        <dic class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="col-4"> Fornavn</div>
+                <input type="text" placeholder="Skriv ditt fornavn her">
+                <div class="fornavn"> </div>
+
+                <div class="col"> Etternavn</div>
+                <input type="text" placeholder="Skriv ditt etternavn her">
+                <div class="etternavn"> </div>
+
+                <div class="col-4"> E-Post </div>
+                <input type="text" placeholder="Skriv din e-post her">
+                <div class="epost"> </div>
+
+                <p>Ønsker du å være anonym?</p>
+                <select id="anonym" name="anonym">
+                    <option value="Empty"></option>
+                    <option value="Ja">Ja</option>
+                    <option value="Ja">Nei</option>
+                </select>
+                <div closed></div>
+
+                <div class="col-4"> Tilbakemelding  
+                    
+                <textarea id="Tilbakemelding-boks" cols="40" rows="5"></textarea>
+                
+                </div>
+                <div class="col-4"> </div>
+            </div>
+            <div class="col-4"></div>
+            
+        <div id="filler"></div>
+        </div>
+</body>
+
+</html>
