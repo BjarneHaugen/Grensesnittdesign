@@ -1,27 +1,164 @@
+html { overflow-y: scroll; }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+}
 
 #headerRow {
-    background-color: #dedede;
+    padding: 0;
+    background-color: #4880b8;
     text-align: center;
+    position: sticky;
+}
+#headerRow * {
+    align-content: center;
 }
 
 #om-oss, #mainpage, #tilbakemelding, #min-side, #timebestilling {
+    height: 4vh;
     padding: 0.3em 0.3em 0.3em 0.3em;
-    border: solid;
     border-width: .1em;
-    border-color: #858585;
-    border-bottom: .1em solid #4880b8;
+    color: #fff;
+    text-align: center;
+    
+}
+#om-oss:hover, #mainpage:hover, #tilbakemelding:hover, #min-side:hover, #timebestilling:hover{
+    background-color: #37618c;
+    border-radius: 5px;
+}
+#om-oss:active, #mainpage:active, #tilbakemelding:active, #min-side:active, #timebestilling:active{
+    background-color: #4880b8;
 }
 
 #headerRow * text {
+    height: 5vh;
     font-size: 1em;
     color: 000000;
-
+    font-weight: bold;
 }
+
+
 
 #headerRow a:link, a:hover, a:visited {
     text-decoration: none;
-    color: 000000;
+    color: ffffff;
 }
 
 
+.hundredpercent{
+    height: 100%;
+    width: 100%;
+}
+/*------------------------------------------------------------------------
+css for about page
+-----------------------------------------------------------------------*/
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
 
+} /* sub container */
+
+.Types-heading {
+    padding: 10px 0;
+    padding-top: 50px;
+    color: #4880b8;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+} /* studentklinkken on top */
+
+.gray_border {
+    border-bottom: 2px solid grey;
+    margin:10px auto;
+    
+}
+
+
+.type-desc {
+    text-align: justify;
+    line-height: 25px;
+    color: #141010;
+} 
+
+/* Lorem text */
+
+
+/*------------------------------------------------------------------------
+end of css for about page
+-----------------------------------------------------------------------*/
+
+.leftText{
+    text-align: left;
+}
+.midtText *{
+    text-align: center;
+}
+
+
+#bilde-placeholder{
+    width: 100%;
+    height: 40vh;
+    background-color: #4880b8;
+}
+
+#filler{
+    height: 25px;
+    width: 100%;
+}
+
+.linkButton{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+select {
+    width: 100%;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    border-bottom: 2px solid #4880b8;
+  }
+  /* select button */
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4880b8;
+  }
+  /* the whole input type text */
+  
+  #tilbakemelding-boks{
+    width:100%;
+    padding: 0;
+    margin: auto;
+    line-break: auto;
+}
+
+.fill{
+    background-color: #858585;
+    color: #fff;
+    font-weight: bold; 
+    border: solid #4880b8 2px;
+}
+
+.roundedBox{
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: #fff;
+    color: black;
+    font-weight: bold; 
+    border-right: solid #858585 2px;
+    border-bottom: solid #858585 2px;
+}
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
